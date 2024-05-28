@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+.logo {
+    margin: 2.5em 0em 2.5em 4.43em;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 3.11em;
+}
+
+.menu-item:last-child {
+    margin-right: 3.94em;
+}
+
+.blue__button {
+    padding: 1.16em 1.94em;
+    background-color: #7AE5FD;
+    border-radius: 4.83em;
+    display: inline-block;
+    max-width: 280px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125em;
+    text-transform: uppercase;
+}
+
+.first__screen {
+    background-image: url("./assets/images/first-screen-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.first__screen-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 33%;
+}
+
+.main__title {
+    margin-bottom: 0.46em;
+    font-size: 3.94em;
+    color: white;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.main__description {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+.white__button {
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.description__container {
+    display: flex;
+    flex-direction: column;
+    padding: 3.125em;
+    align-items: center;
+}
+
+.description__header {
+    align-self: center;
+    text-align: center;
+    max-width: 1000px;
+    margin-block: 10em;
+}
+
+.description__title {
+    margin-bottom: 0.25em;
+    font-weight: 400;
+    font-size: 3.75em;
+    text-transform: uppercase;
+}
+
+.description__goal {
+    margin-bottom: 0.625em;
+    font-size: 1.69em;
+}
+
+.subtext__blue {
+    font-size: 1.25em;
+    color: #73A6B1;
+}
+
+.description__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1FDFF;
+    padding: 2.5em 3.5em;
+}
+
+.description__block-first {
+    margin-top: 3.125em;
+}
+
+.description__block:not(:last-child) {
+    margin-bottom: 3.125em;
+}
+
+.description__content {
+    margin-right: 3.875em;
+}
+
+.description__head {
+    font-size: 2.875em;
+    margin-bottom: 0.217em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.description__text {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.mission__screen {
+    margin-top: 20em;
+    padding: 3.125em;
+    margin-bottom: 10em;
+}
+
+.mission__container {
+    position: relative;
+    z-index: 0;
+}
+
+.mission__container::before {
+    content: "";
+    width: 40vw;
+    height: 44vh;
+    left: 55%;
+    bottom: 3%;
+    position: absolute;
+    background-image: url("assets/images/mission-fon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.mission__container::after {
+    content: "";
+    width: 30vw;
+    height: 61vh;
+    left: 60%;
+    bottom: 1%;
+    position: absolute;
+    background-image: url("assets/images/smiley-little-kids-holding-each-other.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
+
+.mission__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5em;
+    background-color: #F1FDFF;
+    padding-block: 5.62em;
+}
+
+.mission__text {
+    font-size: 1.68em;
+}
+
+.mission__block-images {
+    position: relative;
+    width: 100%;
+}
+
+.mission__fon-image {
+    display: block;
+    width: 100%;
+}
+
+.donate__screen {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 180px;
+}
+
+.donate__screen-content h2 {
+    font-size: 3.75em;
+    font-weight: 400;
+    margin-bottom: 0.25em;
+    text-transform: uppercase;
+}
+
+.donate__screen-content .subtext__blue {
+    margin-bottom: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.68em;
+    margin-bottom: 0.63em;
+}
+
+.donate__screen-content span {
+    font-size: 3.75em;
+    border-right: 2px solid #9AD2DE;
+    padding: 0.1em 0.22em 0.1em 0.22em;
+}
+
+.donate__screen-content span:last-child {
+    border-right: 0;
+}
+
+.donate__screen-content .blue__button {
+    margin-top: 3.125em;
+}
+
+.footer {
+    padding: 0 3.75em 3.75em 3.75em;
+    background-color: #F9FADF;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.125em;
+}
+
+.contacts__header {
+    font-size: 3.125em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 9em;
+    margin-left: 2.1em;
+}
+
+.contacts__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 7em;
+    margin-top: 10em;
+    margin-right: 10em;
+}
+
+.contacts__content p {
+    font-size: 1.25em;
+    margin-bottom: 3.56em;
+    margin-top: 0.45em;
+    line-height: 1.2em;
+}
+
+.contacts__socials img:not(:last-child) {
+    margin-right: 1em;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-block: 3em;
+}
+
+.email img {
+    margin-right: 19em;
+}
+
+.email__content {
+    padding-right: 8em;
+}
+
+.email__subtext {
+    font-size: 1.68em;
+    margin-bottom: 1.44em;
+}
+
+.email__content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email__content form input {
+    border: none;
+    outline: none;
+    font-size: 1.25em;
+    border-radius: 3em;
+    padding-block: 1em;
+    background-color: #F9FADF;
+    margin-bottom: 1.55em;
+    padding-left: 2em;
+}
+
+.email__content .blue__button {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
