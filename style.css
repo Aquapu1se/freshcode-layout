@@ -218,16 +218,7 @@ body {
 
 .mission__text {
     font-size: 1.68em;
-}
-
-.mission__block-images {
-    position: relative;
-    width: 100%;
-}
-
-.mission__fon-image {
-    display: block;
-    width: 100%;
+    max-width: 40%;
 }
 
 .donate__screen {
